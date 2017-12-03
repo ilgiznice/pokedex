@@ -1,0 +1,14 @@
+.filter-pages {
+  width: 230px;
+  display: inline-block;
+  margin-left: 10px;
+  .select2-selection {
+    height: 38px;
+    .select2-selection__rendered {
+      line-height: 38px;
+    }
+    .select2-selection__arrow {
+      top: 6px;
+    }
+  }
+}

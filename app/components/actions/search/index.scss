@@ -1,0 +1,22 @@
+.actions-search {
+  .live-search {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    top: 38px;
+    left: 15px;
+    width: 555px;
+    max-height: 370px;
+    z-index: 100;
+    .item {
+      border: 1px solid rgb(233, 229, 229);
+      text-align: left;
+    }
+  }
+  .form-control {
+    height: 38px;
+  }
+  .live-search.active {
+    display: block;
+  }
+}

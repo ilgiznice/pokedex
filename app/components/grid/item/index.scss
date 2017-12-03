@@ -1,0 +1,25 @@
+.grid {
+  .item {
+    text-align: center;
+    .favorite {
+      position: absolute;
+      cursor: pointer;
+    }
+    .favorite:hover {
+      color: gold;
+    }
+    .favorite.active {
+      color: gold;
+    }
+    a {
+      text-decoration: none;
+    }
+    a::hover {
+      text-decoration: none;
+    }
+    h5 {
+      display: inline;
+      padding: 0px 5px;
+    }
+  }
+}
