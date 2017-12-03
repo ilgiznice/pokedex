@@ -12,8 +12,5 @@ module.exports = {
         "flowtype": {
             "onlyFilesWithFlowAnnotation": true
         }
-    },
-    "rules": {
-        "operator-linebreak": { "overrides": { "?": "ignore", ":": "ignore" } }
     }
 };
