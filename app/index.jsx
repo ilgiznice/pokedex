@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 //  PAGES
 import Index from './pages/index'
 import Profile from './pages/profile'
-// import Detailed from './pages/detailed.jsx'
+import Detailed from './pages/detailed'
 
 //  Redux
 import reducers from './redux'
@@ -29,16 +29,13 @@ if (initialState.user) {
   state.user = { ...state.user, ...initialState.user }
 }
 
-store.subscribe(() => {
-  console.log(store.getState())
-})
-
 render(
   <Provider store={store}>
     <Router>
       <div>
         <Route path="/" exact component={Index} />
         <Route path="/profile" component={Profile} />
+        <Route path="/pokemon/:id" component={Detailed} />
       </div>
     </Router>
   </Provider>,
